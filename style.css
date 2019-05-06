@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700');
+@link url(https://fonts.googleapis.com/css?family=Source+Code+Pro:400,700);
+
+body {
+  font-family: "Open Sans Condensed";
+  font-size: 11 px;
+}
+h1,
+h2,
+h3 {
+  font-family: "Open Sans Condensed";
+  font-weight: small;
+}
+h2 {
+  font-size: 20 px;
+}
+div {
+  font-size: 11px;
+}
+a,
+a > code {
+  color: rgb(77, 93, 240);
+  text-decoration: none;
+}
+.footnote {
+  position: absolute;
+  bottom: 4em;
+  padding-left: 26em;
+  font-size: 0.5em;
+}
+.remark-code,
+.remark-inline-code {
+  font-family: "Source Code Pro", "Lucida Console", Monaco, monospace;
+}
+.remark-code-line-highlighted {
+  background-color: #d6e0d3;
+}
+
+.inverse {
+  background-color: #272822;
+  color: #d6d6d6;
+  text-shadow: 0 0 20px #333;
+}
+.inverse h1,
+.inverse h2,
+.inverse h3 {
+  color: #f3f3f3;
+  line-height: 1em;
+}
+/* Two-column layout */
+.left-column {
+  width: 20%;
+  height: 92%;
+  float: left;
+  padding-right: 1em;
+}
+.left-column h2:last-of-type,
+.left-column h3:last-child {
+  color: #000;
+}
+.right-column {
+  width: 73%;
+  float: right;
+  padding-top: 1em;
+  font-size: 0.7em;
+}
+.right-column h1,
+.inverse h2,
+.inverse h3 {
+  font-family: "Open Sans Condensed";
+  font-weight: lighter;
+}
+
+.pull-left {
+  float: left;
+  width: 52%;
+}
+.pull-right {
+  float: right;
+  width: 43%;
+  font-size: 0.9em;
+  margin-left: 5px;
+  font-family: "Open Sans Condensed";
+}
+.pull-right ~ * {
+  clear: both;
+}
+img {
+  max-width: 100%;
+}
+.reduite img {
+  max-height: 450px;
+}
+.reduite2 img {
+  max-height: 200px;
+}
+.blockquote {
+  border-left: solid 2px lightgray;
+  padding-left: 1em;
+  font-size: 0.3 em;
+  font-weight: small;
+}
+td {
+  border: 0.2px solid;
+  text-align: center;
+  font-size-adjust: auto;
+  font-weight: normal;
+  padding: 5px;
+  font-size: 0.3 em;
+}
+th {
+  border: 0.2px solid;
+  text-align: center;
+}
