@@ -27,11 +27,11 @@ name: programme1
 ### La carte
 
 1. co-construction programme et attentes (1h)
-2. Présentation de l'historique du web et des données liées (2h)
-3. Présentation du modèle de structuration par ontologie (2h)
+2. Présentation de l'[historique du web](#web) et des données liées (2h)
+3. Présentation du modèle de structuration par [ontologie](#ontologie) (2h)
 4. [Enjeux et prespectives](#enjeux) : publication, visualisation, alignement (1h30)
-5. présentation de SKOS (1h30)
-6. Présentation du modèle de données RIC (2h)
+5. [Présentation de SKOS](#skos) (1h30)
+6. [Présentation du modèle de données RIC](#ric) (2h)
 7. présentation de l'outillage (3h)
 8. exercices(7h)
 
@@ -212,6 +212,7 @@ Adopter les standards du Web de données :
 - Expérimenter l’interconnexion inter-institutionnelle des données culturelles
 
 ---
+name : web
 
 ## 3. Présentation de l'histoire du web et des données liées (10h-12h)
 
@@ -311,26 +312,28 @@ L‘objet peut être un texte (littéral) ou une URI.
 Les classes et les propriétés sont déclarées dans des vocabulaires pour être réutilisées
 
 RDF définit un graphe à base de triplets (sujet → prédicat → objet)
- Le sujet représente la ressource à décrire ;
- Le prédicat représente un type de propriété de la ressource ;
- L'objet représente la valeur de la propriété.
 
+* Le sujet représente la ressource à décrire ;
+* Le prédicat représente un type de propriété de la ressource ;
+* L'objet représente la valeur de la propriété.
 
 ---
+
 #### exemple
 
 Décrire un concept du thésaurus matière
 
-Exemple : 
+Exemple :
 ACTION PUBLIQUE est un terme français précisant le terme ADMINISTRATION qui englobe l’ensemble des descripteurs contrôlés utilisés par le vocabulaire contrôlé INTERDOC pour décrire les activités des services des collectivités publiques
 
-ACTION PUBLIQUE est un terme
-ACTION PUBLIQUE est français
-ACTION PUBLIQUE précise le terme administration
-ACTION PUBLIQUE fait partie du vocabulaire INTERDOC
-INTERDOC est un vocabulaire pour décrire les activités des services des collectivités publiques
+* ACTION PUBLIQUE est un terme
+* ACTION PUBLIQUE est français
+* ACTION PUBLIQUE précise le terme administration
+* ACTION PUBLIQUE fait partie du vocabulaire INTERDOC
+* INTERDOC est un vocabulaire pour décrire les activités des services des collectivités publiques
 
 ---
+name : ontologie
 
 ### 4 Présentation du modèle de structuration par ontologie
 
@@ -351,7 +354,9 @@ des métadonnées, une méthode de raisonnement, un format d’organisation des 
 
 ### Le modèle FRBR, récement refondu dans le modèle unique IFLA - LRM : modèle de données de la transition bibliographique 
 
-​Le modèle de données de [data.bnf.fr](http://data.bnf.fr/) expérimente et adapte le modèle [ le modèle FRBR (fonctionnalités requises pour les notices bibliographiques)     ](http://www.ifla.org/publications/functional-requirements-for-bibliographic-records) élaboré par la fédération internationale des associations et institutions de bibliothèques, l’[IFLA](http://ifla.org). [Data.bnf.fr](http://data.bnf.fr/) s’inscrit donc dans les évolutions récentes en matière de description bibliographique.
+​Le modèle de données de [data.bnf.fr](http://data.bnf.fr/) expérimente et adapte le modèle [FRBR (fonctionnalités requises pour les notices bibliographiques)](http://www.ifla.org/publications/functional-requirements-for-bibliographic-records) élaboré par la fédération internationale des associations et institutions de bibliothèques, l’[IFLA](http://ifla.org). 
+
+[Data.bnf.fr](http://data.bnf.fr/) s’inscrit donc dans les évolutions récentes en matière de description bibliographique.
 
 Ce modèle comprend trois groupes d'entités liées par des  relations : les informations sur les documents, les personnes physiques  ou morales, et les thèmes. 
 
@@ -366,6 +371,7 @@ Des données structurées et enrichies qui ne doivent pas  nous faire perdre de 
 5. *Naviguer* : Utiliser les relations qui existent entre une ressource et une autre pour les situer dans un contexte.
 
 ---
+
 ### Le modèle MDFA
 
 Développé pour la société Arkhéia et son navigateur Bach
@@ -373,6 +379,7 @@ Développé pour la société Arkhéia et son navigateur Bach
 .reduite[![Le modèle de l'otologie MDFA](images/ontologieMDFA.jpg)]
 
 ---
+
 ### Le modèle archivesHub
 
 Développé pour le projet [ArchivesHub](https://archiveshub.jisc.ac.uk/)
@@ -487,6 +494,9 @@ Ce projet a également été l’occasion d’expérimenter le décloisonnement 
    3. Intégration et transformation
 
 ---
+
+name : skos
+
 ### Présentation de SKOS
 
 SKOS est construit sur la base du langage RDF, et son principal objectif est de permettre la publication facile de vocabulaires structurés pour leur utilisation dans le cadre du Web de données.
@@ -519,7 +529,11 @@ skos:topConceptOf <INTERDOC> .
 dct:title "un vocabulaire pour décrire les activités des services des collectivités publiques" ; 
 skos:hasTopConcept <ADMINISTRATION> .
 ]
+
 ---
+
+name : ric
+
 ### Présentation de RIC
 
 Décrire le contexte et les relations : le projet de norme Records in Context
